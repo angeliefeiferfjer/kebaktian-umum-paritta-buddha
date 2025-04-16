@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kebaktian Umum Paritta</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'EB Garamond', serif;
+      background: url('https://media.istockphoto.com/id/485020819/photo/buddha-statue.jpg?s=612x612&w=0&k=20&c=PW4zEoNNeZa7N_uAXNWWqUw8xUD6L9CJHQpu-4AiMLw=') center/cover no-repeat;
+      color: #4b2e18;
+      position: relative;
+      animation: moveBackground 15s linear infinite;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    @keyframes moveBackground {
+      0% { background-position: center 10%; }
+      50% { background-position: center 37%; }
+      100% { background-position: center 10%; }
+    }
+
+    .overlay {
+      background-color: rgba(255,255,255,0.88);
+      min-height: 100vh;
+      padding-bottom: 40px;
+    }
+
+    header {
+      padding: 50px 20px 20px;
+      text-align: center;
+      animation: slideInDown 1s ease;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      color: #4b2e18;
+      background-color: rgba(255,255,255,0.75);
+      display: inline-block;
+      padding: 10px 30px;
+      border-radius: 12px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      animation: slideInLeft 1s ease;
+    }
+
+    .paritta {
+      font-size: 1.2em;
+      line-height: 1.25;
+      overflow: hidden;
+    }
+
+    .navigation {
+      margin-top: 40px;
+      text-align: center;
+      animation: slideInLeft 1.4s ease;
+    }
+
+    .navigation a {
+      background-color: #a97438;
+      color: white;
+      padding: 12px 25px;
+      margin: 0 10px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .navigation a:hover {
+      background-color: #8a5c28;
+      transform: scale(1.05);
+    }
+
+    /* Animasi Keyframes */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInLeft {
+      from { transform: translateX(-100px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes slideInDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+  }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kebaktian Umum Paritta Buddha</h1>
+  </header>
+
+  <main>
+    <div class="paritta">
+      <p><b>12. &nbsp; Brahmaviharapharana</b></p>
+      <br>
+      <p><b>Aham sukhito homi</b></p>
+      <p><i>Semoga aku berbahagia</i></p>
+      <p><b>Niddukho homi</b></p>
+      <p><i>Bebas dari penderitaan</i></p>
+      <p><b>Avero homi</b></p>
+      <p><i>Bebas dari penyakit</i></p>
+      <p><b>Anigho homi</b></p>
+      <p><i>Bebas dari kesukaran</i></p>
+      <p><b>Sukhi attanam pariharami</b></p>
+      <p><i>Semoga aku dapat mempertahankan kebahagianku sendiri</i></p>
+      <p><b>Sabbe satta sukhita hontu</b></p>
+      <p><i>Semoga semua makhluk berbahagia</i></p>
+      <p><b>Niddukha hontu</b></p>
+      <p><i>Bebas dari penderitaan</i></p>
+      <p><b>Avera hontu</b></p>
+      <p><i>Bebas dari kebencian</i></p>
+      <p><b>Abyapajjha hontu</b></p>
+      <p><i>Bebas dari kesakitan</i></p>
+      <p><b>Anigha hontu</b></p>
+      <p><i>Bebas dari kesukaran</i></p>
+      <p><b>Sukhi attanam pariharantu</b></p>
+      <p><i>Semoga mereka dapat mempertahankan kebahagiaanku sendiri</i></p>
+      <p><b>(KARUNA):
+          <br>
+          Sabbe satta dukkha pamuccantu
+      </b></p>
+      <p><i>Semoga semua makhluk bebas dari penderitaan</i></p>
+      <p><b>(MUDITA):
+          <br>
+          Sabbe satta ma laddhasampattito vigacchantu
+      </b></p>
+      <p><i>Semoga semua makhluk tidak kehilangan  Kesejahteraan yang telah mereka peroleh.</i></p>
+      <p><b>(UPEKKHA):
+          <br>
+          Sabbe satta
+      </b></p>
+      <p><i>Semoga semua makhluk</i></p>
+      <p><b>Kammassaka</b></p>
+      <p><i>Memiliki karmanya sendiri</i></p>
+      <p><b>Kammadayada</b></p>
+      <p><i>Mewarisi karmanya sendiri</i></p>
+      <p><b>Kammayoni</b></p>
+      <p><i>Lahir dari karmanya sendiri</i></p>
+      <p><b>Kammabandhu</b></p>
+      <p><i>Berhubungan dengan karmanya sendiri</i></p>
+      <p><b>Kammapatisarana</b></p>
+      <p><i>Terlindung oleh karmanya sendiri</i></p>
+      <p><b>Yam kammam karissanti kalyanam va
+          <br>
+          papakam va tassa dayada bhavissanti
+      </b></p>
+      <p><i>Apa pun karma yang diperbuatnya baik atau
+          <br>
+          buruk itula yang akan diwarisinya</i></p>
+    </div>
+  </main>
+
+  <div class="navigation">
+    <a href="halaman11.html">Sebelumnya</a>
+    <a href="halaman13.html">Berikutnya</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kebaktian Umum Paritta</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'EB Garamond', serif;
+      background: url('https://media.istockphoto.com/id/485020819/photo/buddha-statue.jpg?s=612x612&w=0&k=20&c=PW4zEoNNeZa7N_uAXNWWqUw8xUD6L9CJHQpu-4AiMLw=') center/cover no-repeat;
+      color: #4b2e18;
+      position: relative;
+      animation: moveBackground 15s linear infinite;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: rgba(0, 0, 0, 0.4);
+      z-index: -1;
+    }
+
+    @keyframes moveBackground {
+      0% { background-position: center 10%; }
+      50% { background-position: center 37%; }
+      100% { background-position: center 10%; }
+    }
+
+    .overlay {
+      background-color: rgba(255,255,255,0.88);
+      min-height: 100vh;
+      padding-bottom: 40px;
+    }
+
+    header {
+      padding: 50px 20px 20px;
+      text-align: center;
+      animation: slideInDown 1s ease;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      color: #4b2e18;
+      background-color: rgba(255,255,255,0.75);
+      display: inline-block;
+      padding: 10px 30px;
+      border-radius: 12px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      animation: slideInLeft 1s ease;
+    }
+
+    .paritta {
+      font-size: 1.2em;
+      line-height: 1.25;
+      overflow: hidden;
+    }
+
+    .navigation {
+      margin-top: 40px;
+      text-align: center;
+      animation: slideInLeft 1.4s ease;
+    }
+
+    .navigation a {
+      background-color: #a97438;
+      color: white;
+      padding: 12px 25px;
+      margin: 0 10px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .navigation a:hover {
+      background-color: #8a5c28;
+      transform: scale(1.05);
+    }
+
+    /* Animasi Keyframes */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInLeft {
+      from { transform: translateX(-100px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes slideInDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+  }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kebaktian Umum Paritta Buddha</h1>
+  </header>
+
+  <main>
+    <div class="paritta">
+      <p><b>4. &nbsp; Patcāsila</b></p>
+      <br>
+      <p><b>Pāṇātipātā veramaṇī sikkhāpadaṁ samādiyāmi
+          <br>
+          Adinnādānā veramaṇī sikkhāpadaṁ samādiyāmi
+          <br>
+          Kāmesu micchācārā veramaṇī sikkhāpadaṁ samādiyāmi
+          <br>
+          Musāvādā veramaṇī sikkhāpadaṁ samādiyāmi
+          <br>
+          Surāmeraya majjapamādaṭṭhānā veramaṇī sikkhāpadaṁ samādiyāmi
+      </b></p>
+      <br>
+      <p><i>Arti:</i></p>
+      <p>Aku bertekad menghindari pembunuhan makhluk hidup
+          <br>
+          Aku bertekad menghindari mengambil sesuatu yang tidak diberikan
+          <br>
+          Aku bertekad menghindari perbuatan asusila
+          <br>
+          Aku bertekad menghindari perbuatan asusila
+          <br>
+          Aku bertekad menghindari mengonsumsi zat yang dapat melemahkan kesadaran
+      </p>
+    </div>
+  </main>
+
+  <div class="navigation">
+    <a href="halaman3.html">Sebelumnya</a>
+    <a href="halaman5.html">Berikutnya</a>
+  </div>
+
+</body>
+</html>
